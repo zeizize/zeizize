@@ -1,19 +1,18 @@
 #include <iostream>
 
-using namespace std;  
+using namespace std;
 
 int main() {
-float x,y,z,A,B,C,D,E;
-cout<<"enter the value of x:  " ;
-cin>>x;
-cout<<"enter the value of y:  " ;
-cin>>y;
-cout<<"enter the value of z:  " ;
-cin>>z;
-A=(x-y)*(x+z);
-B=(x+y+z);
-C=(B*B);
-D=(C+1);
-E=(x-y)*(x+z)/(D);
-cout<<E;
+float m,n,A,B,C,D;
+cout<<"please enter two decimal numbers  : ";
+cin>>m>>n;
+A=m+n;
+
+B=m-n;
+
+C=m*n;
+
+D=m/n;
+
+cout<<"plus"<< A <<"/n"<<"minus"<< B <<"/n"<<"multiply"<< C <<"/n"<<"divided by"<< D;
 }
