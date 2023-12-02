@@ -3,15 +3,22 @@
 using namespace std;
 
 int main() {
-int x,y,z;
-cout<<"enter the value of x:  " ;
-cin>>x;
-cout<<"enter the value of y:  " ;
-cin>>y;
-cout<<"enter the value of z:  " ;
-cin>>z;
-int result1=(x-y)*(x+z);
-int result2=(x+y+z)*(x+y+z)+(1);
-int finalresult=(x-y)*(x+z)/(x+y+z)*(x+y+z)+(1);
-cout<<finalresult<<endl;
+float num1,num2,result;
+char op;
+cout<<"please enter expression  :  ";
+cin>>num1>>op>>num2;
+switch(op) {
+	case'+':
+		result=num1+num2;
+		break;
+	case'-':
+		result=num1-num2;
+		break;
+	case'*':
+		result=num1*num2;
+		break;
+	case'/':
+		result=num1/num2;
+}
+cout<<result;
 }
