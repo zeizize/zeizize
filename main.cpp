@@ -1,24 +1,19 @@
 #include <iostream>
 
-using namespace std;
+using namespace std;  
 
 int main() {
-float num1,num2,result;
-char op;
-cout<<"please enter expression  :  ";
-cin>>num1>>op>>num2;
-switch(op) {
-	case'+':
-		result=num1+num2;
-		break;
-	case'-':
-		result=num1-num2;
-		break;
-	case'*':
-		result=num1*num2;
-		break;
-	case'/':
-		result=num1/num2;
-}
-cout<<result;
+float x,y,z,A,B,C,D,E;
+cout<<"enter the value of x:  " ;
+cin>>x;
+cout<<"enter the value of y:  " ;
+cin>>y;
+cout<<"enter the value of z:  " ;
+cin>>z;
+A=(x-y)*(x+z);
+B=(x+y+z);
+C=(B*B);
+D=(C+1);
+E=(x-y)*(x+z)/(D);
+cout<<E;
 }
